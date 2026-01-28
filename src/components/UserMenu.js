@@ -44,13 +44,13 @@ const UserMenu = (props) => {
     >
       <div onClick={(e) => e.preventDefault()}>
         <Space
-          // style={{
-          //   color: "white",
-          //   fontFamily: "Poppins",
-          //   fontWeight: "600",
-          //   textTransform: "uppercase",
-          //   cursor:"pointer"
-          // }}
+          style={{
+            color: "white",
+            fontFamily: "Poppins",
+            fontWeight: "600",
+            textTransform: "uppercase",
+            cursor:"pointer"
+          }}
         >
           {props.user.username}
           <DownOutlined style={{fontSize:"0.9rem"}} />
