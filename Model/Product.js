@@ -11,16 +11,16 @@ const reviewSchema = mongoose.Schema({
     reviewer_id: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "User"
-    // },
-    // reviewerName: {
-    //     type: String,
-    // },
-    // rating: {
-    //     type: Number,
-    //     required: true,
-    //     min:1,
-    //     max:5
-    // }
+    },
+    reviewerName: {
+        type: String,
+    },
+    rating: {
+        type: Number,
+        required: true,
+        min:1,
+        max:5
+    }
 })
 
 const productSchema = mongoose.Schema({
