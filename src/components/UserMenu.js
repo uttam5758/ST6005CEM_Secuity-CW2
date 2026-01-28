@@ -12,11 +12,11 @@ const UserMenu = (props) => {
   const items = [
     {
       key: "1",
-      // label: (
-      //   <Link to={`/user/${props.user._id}`}>
-      //     <Button type="link" className="menu-btn" ><UserOutlined style={{fontSize: "18px"}} />My Profile</Button>
-      //   </Link>
-      // ),
+      label: (
+        <Link to={`/user/${props.user._id}`}>
+          <Button type="link" className="menu-btn" ><UserOutlined style={{fontSize: "18px"}} />My Profile</Button>
+        </Link>
+      ),
     },
     {
       key: "2",
