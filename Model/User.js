@@ -7,12 +7,12 @@ const mongoose = require("mongoose");
 //     }
 // });
 
-// const cartItemSchema = mongoose.Schema({
-//     productId: {
-//         type: mongoose.Schema.Types.ObjectId,
-//         ref: 'Product'
-//     }
-// });
+const cartItemSchema = mongoose.Schema({
+    productId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Product'
+    }
+});
 
 const userSchema = mongoose.Schema({
     username: {
