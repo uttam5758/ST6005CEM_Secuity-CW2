@@ -13,12 +13,12 @@ export function SessionProvider({ children }) {
   const [logoutTimer, setLogoutTimer] = useState(null);
   const [idleTimer, setIdleTimer] = useState(null);
 
-  // const login = (userData, authToken) => {
-  //   setUser(userData);
-  //   setToken(authToken);
-  //   localStorage.setItem('token', authToken);
-  //   resetLogoutTimer();
-  // };
+  const login = (userData, authToken) => {
+    setUser(userData);
+    setToken(authToken);
+    localStorage.setItem('token', authToken);
+    resetLogoutTimer();
+  };
 
   const logout = () => {
     setUser(null);
